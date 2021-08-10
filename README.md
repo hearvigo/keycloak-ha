@@ -62,7 +62,7 @@ docker run -d --name keycloak1 --restart=always \
     -e JGROUPS_DISCOVERY_EXTERNAL_IP=172.31.72.101 \
     -e PROXY_ADDRESS_FORWARDING=true \
     -e KEYCLOAK_FRONTEND_URL=https://your-domain/auth \
-    vigoz/keycloak-ha:10.0.2
+    hearvigo/keycloak-ha:15.0.0
 ```
 
 ### Run keycloak2
@@ -86,7 +86,7 @@ docker run -d --name keycloak2 --restart=always \
     -e JGROUPS_DISCOVERY_EXTERNAL_IP=172.31.72.102 \
     -e PROXY_ADDRESS_FORWARDING=true \
     -e KEYCLOAK_FRONTEND_URL=https://your-domain/auth \
-    vigoz/keycloak-ha:10.0.2
+    hearvigo/keycloak-ha:15.0.0
 ```
 
 ### MySQL Configuration
@@ -118,7 +118,7 @@ docker run -d --name keycloak1 --restart=always \
     -e JGROUPS_DISCOVERY_EXTERNAL_IP=172.31.72.101 \
     -e PROXY_ADDRESS_FORWARDING=true \
     -e KEYCLOAK_FRONTEND_URL=https://your-domain/auth \
-    vigoz/keycloak-ha:10.0.2-postgres
+    hearvigo/keycloak-ha:15.0.0-postgres
 ```
 
 ### Run keycloak2
@@ -143,5 +143,5 @@ docker run -d --name keycloak2 --restart=always \
     -e JGROUPS_DISCOVERY_EXTERNAL_IP=172.31.72.102 \
     -e PROXY_ADDRESS_FORWARDING=true \
     -e KEYCLOAK_FRONTEND_URL=https://your-domain/auth \
-    vigoz/keycloak:10.0.2-postgres
+    hearvigo/keycloak-ha:15.0.0-postgres
 ```
